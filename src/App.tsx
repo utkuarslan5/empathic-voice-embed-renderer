@@ -18,7 +18,7 @@ import { Frame } from './components/Frame';
 if (typeof window !== 'undefined') {
   posthog.init(import.meta.env['VITE_PUBLIC_POSTHOG_KEY'], {
     api_host:
-      import.meta.env['VITE_PUBLIC_POSTHOG_HOST'] || 'https://app.posthog.com',
+      import.meta.env['VITE_PUBLIC_POSTHOG_HOST'] || 'https://eu.i.posthog.com',
     loaded: (posthog) => {
       if (import.meta.env.NODE_ENV === 'development') posthog.debug(); // debug mode in development
     },
@@ -28,6 +28,7 @@ if (typeof window !== 'undefined') {
     property_blacklist: [],
   });
 }
+
 
 function App() {
   const setConfig = useConfigStore((store) => store.setConfig);

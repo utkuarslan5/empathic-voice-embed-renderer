@@ -1,8 +1,8 @@
 import { Button } from '@/components/Button';
 import { CircledText } from '@/components/CircledText';
 import { motion } from 'framer-motion';
-import { Bell } from 'lucide-react';
-import * as Tooltip from '@radix-ui/react-tooltip';
+// import { Bell } from 'lucide-react';
+// import * as Tooltip from '@radix-ui/react-tooltip';
 import { cn } from '@/utils';
 import { useDerivedLayoutState } from '@/store/useDerivedLayoutState';
 
@@ -26,9 +26,8 @@ export const IntroScreen = ({
       transition={{ duration: 2 }}
     >
       <h2 className="text-center text-3xl">
-        <span>Meet EVI, our </span>
-        <CircledText>empathic</CircledText>
-        <span> AI voice</span>
+        <span>Hi, I'm   </span>
+        <CircledText>AnxiousLove </CircledText>
       </h2>
       <div className="w-fit">
         <motion.div
@@ -65,8 +64,8 @@ export const IntroScreen = ({
           >
             Start Conversation
           </Button>
-          <div className="absolute right-2 top-3">
-            <Tooltip.Provider delayDuration={400}>
+          {/* <div className="absolute right-2 top-3">
+            <Tooltip.Provider delayDuration={40000}>
               <Tooltip.Root>
                 <Tooltip.Trigger>
                   <div className="grid size-[36px] cursor-pointer place-content-center rounded-full bg-tan-600/20 text-black transition-colors hover:bg-tan-600/50">
@@ -89,7 +88,7 @@ export const IntroScreen = ({
                 </Tooltip.Content>
               </Tooltip.Root>
             </Tooltip.Provider>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </motion.div>

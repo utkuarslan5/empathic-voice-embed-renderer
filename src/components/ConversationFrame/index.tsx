@@ -3,7 +3,7 @@ import { CloseButton } from '../CloseButton';
 import { FC, PropsWithChildren } from 'react';
 import { MuteButton } from '@/components/MuteButton';
 import { useVoice } from '@humeai/voice-react';
-import { ExpandButton } from '../ExpandButton';
+// import { ExpandButton } from '../ExpandButton';
 import * as Tooltip from '@radix-ui/react-tooltip';
 
 export type ConversationFrameProps = PropsWithChildren<{
@@ -75,7 +75,7 @@ export const ConversationFrame: FC<ConversationFrameProps> = ({
                 {isMuted ? 'Unmute' : 'Mute'}
               </Tooltip.Content>
             </Tooltip.Root>
-            <Tooltip.Root>
+            {/* <Tooltip.Root>
               <Tooltip.Trigger>
                 <ExpandButton
                   onPress={() => {
@@ -90,7 +90,7 @@ export const ConversationFrame: FC<ConversationFrameProps> = ({
               >
                 View full demo
               </Tooltip.Content>
-            </Tooltip.Root>
+            </Tooltip.Root> */}
           </Tooltip.Provider>
         )}
 

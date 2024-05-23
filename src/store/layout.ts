@@ -24,10 +24,10 @@ interface LayoutStore {
 
 let timeout: number | undefined = undefined;
 
-const DEFAULT_FRAME_WIDTH = 400;
+const DEFAULT_FRAME_WIDTH = 800;
 const FRAME_MARGIN_X = 48;
 
-const DEFAULT_FRAME_HEIGHT = 300;
+const DEFAULT_FRAME_HEIGHT = 600;
 export const SHORT_FRAME_HEIGHT = 250;
 const HEIGHT_BREAKPOINT = 750;
 
